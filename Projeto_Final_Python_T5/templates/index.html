@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Empresa de Serviços Domésticos</title>
+</head>
+<body>
+    <h1>Solicite um serviço</h1>
+    <form method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <label for="celular">Celular:</label>
+        <input type="celular" name="celular" id="celular" required><br><br>
+
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>Escolha de Tarefas</title>
+</head>
+<body>
+    <label for="Tarefas">Tarefas:</label>
+    <select name="tarefas" id="Tarefas" required onchange="mostrarListaTarefas()">
+        <option value="Escolha uma opção">Escolha uma opção</option>
+        <option value="Diárias">Diárias</option>
+        <option value="Semanais">Semanais</option>
+        <option value="Mensais">Mensais</option>
+    </select><br><br>
+
+    <div id="lista-tarefas">
+       
+        <div id="tarefas-diarias" style="display: none;">
+            <h2>Tarefas Diárias:</h2>
+            <ul>
+                <li>Lavar as louças</li>
+                <li>Limpar o fogão</li>
+                <li>Retirar o lixo</li>
+                <li>Varrer ou passar o aspirador de pó</li>
+                <li>Passar um pano úmido no chão</li>
+                <li>Organizar as coisas espalhadas</li>
+                <li>Arrumar as camas</li>
+                <li>Lavar a roupa (depende do volume de roupa)</li>
+            </ul>
+        </div>
+
+        <div id="tarefas-semanais" style="display: none;">
+            <h2>Tarefas Semanais:</h2>
+            <ul>
+                <li>Segunda-feira: Trocar as toalhas</li>
+                <li>Terça-feira: Limpar o forno</li>
+                <li>Quarta-feira: Lavar o banheiro</li>
+                <li>Quinta-feira: Trocar a roupa de cama</li>
+                <li>Sexta-feira: Limpar o interior do micro-ondas</li>
+                <li>Sábado: Tirar o pó dos móveis e objetos</li>
+                <li>Domingo: Lavar o banheiro</li>
+            </ul>
+        </div>
+
+        <div id="tarefas-mensais" style="display: none;">
+            <h2>Tarefas Mensais:</h2>
+            <ul>
+                <li>Organizar guarda-roupas</li>
+                <li>Limpar os armários da cozinha</li>
+                <li>Virar os colchões</li>
+                <li>Limpar a máquina de lavar</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function mostrarListaTarefas() {
+            var opcaoSelecionada = document.getElementById('Tarefas').value;
+            var listaTarefas = document.getElementById('lista-tarefas');
+
+            // Oculta todas as listas de tarefas
+            document.getElementById('tarefas-diarias').style.display = 'none';
+            document.getElementById('tarefas-semanais').style.display = 'none';
+            document.getElementById('tarefas-mensais').style.display = 'none';
+
+            // Exibe a lista de tarefas correspondente à opção selecionada
+            if (opcaoSelecionada === 'Diárias') {
+                document.getElementById('tarefas-diarias').style.display = 'block';
+            } else if (opcaoSelecionada === 'Semanais') {
+                document.getElementById('tarefas-semanais').style.display = 'block';
+            } else if (opcaoSelecionada === 'Mensais') {
+                document.getElementById('tarefas-mensais').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
+        <label for="observacoes">Observações:</label><br>
+        <textarea name="observacoes" id="observacoes" rows="4" cols="50"></textarea><br><br>
+ 
+  <label for="aceitarSms">Aceitar receber alertas via SMS:</label>
+  <input type="checkbox" name="aceitarSms" id="aceitarSms"><br><br>
+
+  <button type="submit">Solicitar serviço</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+Enviar sms com um alerta com as rotinas diárias, semanais e mensais.
+
+Diariamente
+Lavar as louças
+Limpar o fogão
+Retirar o lixo
+Varrer ou passar o aspirador de pó e passar um pano úmido no chão
+Organizar as coisas espalhadas
+Arrumar as camas
+Lavar a roupa (depende do volume de roupa)
+
+
+Semanalmente
+Trocar as toalhas
+Limpar o forno
+Lavar o banheiro (2x na semana)
+Trocar a roupa de cama
+Limpar o interior do micro-ondas
+Tirar o pó dos móveis e objetos
+
+
+Mensalmente
+Organizar guarda-roupas
+Limpar os armários da cozinha
+Virar os colchões
+Limpar a máquina de lavar
